@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .logo span {
+    color: #7f5af0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #c0c0c0;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #fff;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 120px 30px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .hero-content h1 span {
+    color: #7f5af0;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    color: #bfbfbf;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s ease forwards;
+  }
+  
+  .cta {
+    padding: 12px 30px;
+    background-color: #7f5af0;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px #7f5af0;
+    transition: 0.3s;
+  }
+  
+  .cta:hover {
+    background: #9e7bff;
+    box-shadow: 0 0 30px #a182ff;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 80px 20px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    width: 300px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(127, 90, 240, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(127, 90, 240, 0.5);
+  }
+  
+  .card h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    color: #ccc;
+    font-size: 1rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
