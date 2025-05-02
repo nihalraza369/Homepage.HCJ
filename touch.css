@@ -1,0 +1,148 @@
+:root {
+    --bg-light: #fdf6ee;
+    --brown: #a67c52;
+    --dark-brown: #5a3e2b;
+    --text: #3e2b1e;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background: var(--bg-light);
+    color: var(--text);
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #fff5e9;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--brown);
+  }
+  
+  .logo span {
+    color: var(--dark-brown);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text);
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--brown);
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 120px 30px;
+    background: #fffaf5;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    color: var(--dark-brown);
+    margin-bottom: 15px;
+    animation: slideFade 1s ease-in-out;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    color: #5e4b3a;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--brown);
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: var(--dark-brown);
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px 30px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card h3 {
+    color: var(--brown);
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    color: #5e4b3a;
+    font-size: 0.95rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #f7ede3;
+    color: #7d5c3d;
+    font-size: 0.9rem;
+  }
+  
+  @keyframes slideFade {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @media(max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
