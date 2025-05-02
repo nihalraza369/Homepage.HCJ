@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #2980b9;
+    --text-color: #fff;
+    --light-color: #ecf0f1;
+    --btn-bg: #3498db;
+    --hover-color: #1abc9c;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: var(--primary-color);
+    color: var(--text-color);
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(44, 62, 80, 0.9);
+    z-index: 1000;
+    transition: background 0.3s;
+  }
+  
+  header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  header .logo span {
+    color: var(--secondary-color);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--hover-color);
+  }
+  
+  section {
+    padding: 100px 50px;
+    text-align: center;
+  }
+  
+  #hero {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1500x900') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+  }
+  
+  #hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  #hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  #hero .btn {
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  #hero .btn:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .about, .services, .contact {
+    background: #34495e;
+    border-radius: 10px;
+  }
+  
+  .about h2, .services h2, .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .service-box {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    background: #16a085;
+    color: var(--text-color);
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(52, 152, 219, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  form input, form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: var(--hover-color);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
