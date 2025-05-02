@@ -1,0 +1,132 @@
+/* Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ffff;
+  }
+  
+  .logo span {
+    color: #ffffff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-links li a::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #00ffff;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(63,94,251,0.1), rgba(252,70,107,0.05));
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    animation: fadeIn 2s ease;
+  }
+  
+  .glass-card h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease-out;
+  }
+  
+  .highlight {
+    color: #00ffff;
+  }
+  
+  .typing-text {
+    font-size: 1.2rem;
+    height: 30px;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+    font-style: italic;
+  }
+  
+  .btn-glow {
+    padding: 12px 28px;
+    font-size: 1rem;
+    color: #000;
+    background: #00ffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px #00ffff, 0 0 40px #00ffff88;
+  }
+  
+  .btn-glow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffff, 0 0 50px #00ffffaa;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes slideDown {
+    0% { transform: translateY(-40px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
